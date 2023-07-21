@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
-        System.out.println("Digite um número de 1 a 7:");
+        System.out.println("Digite um dia da semana (número de 1 a 7):");
         int diaDaSemana = teclado.nextInt();
 
         //estrutura condicional comum
