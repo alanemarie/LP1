@@ -5,7 +5,7 @@ public class Main {
 
         Scanner teclado = new Scanner(System.in);
 
-        System.out.println("Digite sua idade: ");
+        System.out.println("Digite sua idade em anos: ");
         int idade = teclado.nextInt();
 
         //condicional com if comum
