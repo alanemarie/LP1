@@ -4,10 +4,14 @@ public class Main {
         Processamento processamento = new Processamento();
         Saida saida = new Saida();
 
+        int n = entrada.lerNumeroInteiro("Digite quantos números inteiros deseja somar: ");
+
+        //preparação para entrar na repetição
         int i;
         processamento.initSoma();
+        //
 
-        for (i = 1; i <= 10; i++) {
+        for (i = 1; i <= n; i++) {
             String mensagem = "Digite o valor do "+i+"º número:";
             int temp = entrada.lerNumeroInteiro(mensagem);
             processamento.setSoma(temp);

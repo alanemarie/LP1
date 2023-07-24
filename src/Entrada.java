@@ -9,9 +9,15 @@ public class Entrada {
             try{
                 System.out.println(mensagem);
                 a = teclado.nextInt();
-                break;
+                if (a >= 0)
+                    break;
+                else {
+                    System.out.println("Digite um número positivo (maior ou igual a zero):");
+                    teclado = new Scanner(System.in);
+                }
+
             }catch(Exception e){
-                System.out.println("Erro! Digite um nümerro inteiro!");
+                System.out.println("Erro! Digite um número inteiro!");
                 teclado = new Scanner(System.in);
             }
         }
