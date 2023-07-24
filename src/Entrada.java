@@ -17,12 +17,6 @@ public class Entrada {
         }
         return a;
     }
-
-     public double lerNumeroDouble(String mensagem){
-        System.out.println(mensagem);
-        double a = teclado.nextDouble();
-        return a;
-    }
 }
 
 
