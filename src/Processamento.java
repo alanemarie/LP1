@@ -16,5 +16,10 @@ public class Processamento {
     public int getSoma(){
         return this.soma;
     }
+
+    //getter da media
+    public double getMedia(int quantidade){
+        return (double) this.soma/(double) quantidade;
+    }
 }
 

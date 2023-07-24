@@ -18,7 +18,9 @@ public class Main {
         }
 
         int soma = processamento.getSoma();
+        double media = processamento.getMedia(n);
         saida.exibirSoma(soma);
+        saida.exibirMedia(media);
     }
 }
 
