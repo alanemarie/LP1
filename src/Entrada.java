@@ -12,7 +12,7 @@ public class Entrada {
                 if (a >= 0)
                     break;
                 else {
-                    System.out.println("Digite um número positivo (maior ou igual a zero):");
+                    System.out.println("Digite um número positivo (maior ou igual a zero)!");
                     teclado = new Scanner(System.in);
                 }
 
