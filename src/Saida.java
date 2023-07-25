@@ -6,7 +6,7 @@ public class Saida {
     }
 
     public void exibirMedia(double media){
-        DecimalFormat df = new DecimalFormat("#0.0");
+        DecimalFormat df = new DecimalFormat("#0.00");
         System.out.println("A média é igual a "+df.format(media));
     }
 }

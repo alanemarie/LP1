@@ -21,8 +21,11 @@ public class Main {
             resposta = entrada.lerCaracter("Digite sim/nao para ler outro número."); 
         }
 
+        int quantidade = i-1;
         int soma = processamento.getSoma();
+        double media = processamento.getMedia(quantidade);
         saida.exibirSoma(soma);
+        saida.exibirMedia(media);
     }
 }
 
