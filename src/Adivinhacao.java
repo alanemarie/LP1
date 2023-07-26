@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Exercicio1 {
+public class Adivinhacao {
     //atributos do Exercicio1
     Random sorteador = new Random();
     Entrada entrada = new Entrada();

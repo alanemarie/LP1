@@ -24,4 +24,44 @@ public class Entrada {
 
         return palpite;
     }
+
+    public int lerOpcao(String mensagem){
+        int opcao = 0;
+
+        while(true){
+            try {
+                System.out.println(mensagem);
+                opcao = teclado.nextInt();
+                break;
+            } catch (Exception e) {
+                System.out.println("Opção inválida!");
+                teclado = new Scanner(System.in);
+            }
+        }
+
+        return opcao;
+    }
+
+    public double lerQuantiaEmDinheiro(String mensagem){
+        double quantia = 0;
+
+        while(true){
+            try {
+                System.out.println(mensagem);
+                quantia = teclado.nextDouble();
+                if (quantia >= 0) 
+                    break;
+                else {
+                    System.out.println("Quantia inválida!");
+                    teclado = new Scanner(System.in);
+                }
+            } catch (Exception e) {
+                System.out.println("Erro! Digite um valor numérico.");
+                teclado = new Scanner(System.in);
+            }
+        }
+
+        return quantia;
+    }
+
 }
